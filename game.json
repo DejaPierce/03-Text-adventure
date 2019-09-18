@@ -1,0 +1,99 @@
+{
+    "verbs": [
+      { "v": "EXITS",   "map": "EXITS" },
+      { "v": "QUIT",    "map": "QUIT"  },
+      { "v": "NORTH",   "map": "NORTH" },
+      { "v": "N",       "map": "NORTH" },
+      { "v": "SOUTH",   "map": "SOUTH" },
+      { "v": "S",       "map": "SOUTH" },
+      { "v": "EAST",    "map": "EAST"  },
+      { "v": "E",       "map": "EAST"  },
+      { "v": "WEST",    "map": "WEST"  },
+      { "v": "W",       "map": "WEST"  }
+    ],
+
+    "rooms": {
+      "START": {
+        "name": "Starting place",
+        "desc": "This is the place to start!",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "LOC2",
+            "condition": ""
+          },
+          {
+          "name": "Second location",
+          "desc": "This is after the first location!",
+            "verb": "SOUTH",
+            "target": "LOC3",
+            "condition": ""
+          },
+          {
+          "name": "Third location",
+          "desc": "This is after the second location!",
+            "verb": "WEST",
+            "target": "LOC4",
+            "condition": ""
+          },
+          {
+          "name": "Fourth Location",
+          "desc": "This is after the third location!",
+            "verb": "EAST",
+            "target": "LOC5",
+            "condition": ""
+          },
+          {
+            "name": "Fifth Location",
+            "desc": "This is after the fourth location!",
+            "verb": "WEST",
+            "target": "LOC6",
+            "condition": ""
+          },
+          {
+            "name": "Sixth Location",
+            "desc": "This is after the fifth location!",
+            "verb": "EAST",
+            "target": "LOC7",
+            "condition": ""
+          },
+          {
+            "name": "Seventh Location",
+            "desc": "This is after the sixth location!",
+            "verb": "NORTH",
+            "target": "EXITS",
+            "condition": ""
+          }
+           ],
+        "inventory": []
+      },
+      "LOC2": {
+        "name": "Second Location",
+        "desc": "Here is the second location."
+      },
+      "LOC3": {
+        "name": "Third Location",
+        "desc": "Here is the third location but you still don't see your parents"
+      },
+      "LOC4": {
+        "name": "Fourth Location",
+        "desc": "Here is the fourth location you still see nothing but darkness"
+      },
+      "LOC5": {
+        "name": "Fifth Location",
+        "desc": "Here is the fifth location you still see darkness and a dead rat"
+      },
+      "LOC6": {
+        "name": "Sixth Location",
+        "desc": "Here is the sixth location you start seeing some light"
+      },
+      "LOC7": {
+        "name": "Seventh Location",
+        "desc": "You have made it out you look around and see that you're in the middle of a crime scene",
+        "exits": [
+        ]
+      },
+        "inventory": []
+      }
+    }
+  

@@ -44,8 +44,8 @@
             "condition": ""
           },
           {
-            "name": "Fifth Location",
-            "desc": "This is after the fourth location!",
+          "name": "Fifth Location",
+          "desc": "This is after the fourth location!",
             "verb": "WEST",
             "target": "LOC6",
             "condition": ""
@@ -69,23 +69,33 @@
       },
       "LOC2": {
         "name": "Second Location",
-        "desc": "Here is the second location."
+        "desc": "Here is the second location.",
+        "exits": [       
+        ]
       },
       "LOC3": {
         "name": "Third Location",
-        "desc": "Here is the third location but you still don't see your parents"
+        "desc": "Here is the third location but you still don't see your parents",
+        "exits": [
+        ]
       },
       "LOC4": {
         "name": "Fourth Location",
-        "desc": "Here is the fourth location you still see nothing but darkness"
+        "desc": "Here is the fourth location you still see nothing but darkness",
+        "exits":[
+        ]
       },
       "LOC5": {
         "name": "Fifth Location",
-        "desc": "Here is the fifth location you still see darkness and a dead rat"
+        "desc": "Here is the fifth location you still see darkness and a dead rat",
+        "exits":[
+        ]
       },
       "LOC6": {
         "name": "Sixth Location",
-        "desc": "Here is the sixth location you start seeing some light"
+        "desc": "Here is the sixth location you start seeing some light",
+        "exits":[
+        ]
       },
       "LOC7": {
         "name": "Seventh Location",

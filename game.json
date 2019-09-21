@@ -1,109 +1,377 @@
 {
-    "verbs": [
-      { "v": "EXITS",   "map": "EXITS" },
-      { "v": "QUIT",    "map": "QUIT"  },
-      { "v": "NORTH",   "map": "NORTH" },
-      { "v": "N",       "map": "NORTH" },
-      { "v": "SOUTH",   "map": "SOUTH" },
-      { "v": "S",       "map": "SOUTH" },
-      { "v": "EAST",    "map": "EAST"  },
-      { "v": "E",       "map": "EAST"  },
-      { "v": "WEST",    "map": "WEST"  },
-      { "v": "W",       "map": "WEST"  }
-    ],
+  "verbs": [
+    { "v": "EXITS",   "map": "EXITS" },
+    { "v": "QUIT",    "map": "QUIT"  },
+    { "v": "NORTH",   "map": "NORTH" },
+    { "v": "N",       "map": "NORTH" },
+    { "v": "SOUTH",   "map": "SOUTH" },
+    { "v": "S",       "map": "SOUTH" },
+    { "v": "EAST",    "map": "EAST"  },
+    { "v": "E",       "map": "EAST"  },
+    { "v": "WEST",    "map": "WEST"  },
+    { "v": "W",       "map": "WEST"  }
+  ],
 
+  "rooms": {
+    "START": {
+      "name": "Starting place",
+      "desc": "This is the place to start!",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "LOC2",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "LOC2",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "LOC2",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "LOC2",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+  
+  "rooms": {
+    "START": {
+      "name": "Location 2",
+      "desc": "This is the second location",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "LOC3",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "LOC3",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "LOC3",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "LOC3",
+          "condition": ""
+          }
+      ],
+        "inventory": []
+      },
+    
+  "rooms": {
+    "START": {
+      "name": "Location 3",
+      "desc": "This is the third location",
+      "exits": [
+        {
+          "verb": "NORTH",
+          "target": "LOC4",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "LOC4",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "LOC4",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "LOC4",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+        
     "rooms": {
       "START": {
-        "name": "Starting place",
-        "desc": "This is the place to start!",
+        "name": "Location 4",
+        "desc": "This is the fourth location",
         "exits": [
           {
             "verb": "NORTH",
-            "target": "LOC2",
-            "condition": ""
-          },
-          {
-          "name": "Second location",
-          "desc": "This is after the first location!",
-            "verb": "SOUTH",
-            "target": "LOC3",
-            "condition": ""
-          },
-          {
-          "name": "Third location",
-          "desc": "This is after the second location!",
-            "verb": "WEST",
-            "target": "LOC4",
-            "condition": ""
-          },
-          {
-          "name": "Fourth Location",
-          "desc": "This is after the third location!",
-            "verb": "EAST",
             "target": "LOC5",
             "condition": ""
           },
           {
-          "name": "Fifth Location",
-          "desc": "This is after the fourth location!",
-            "verb": "WEST",
-            "target": "LOC6",
+            "verb": "SOUTH",
+            "target": "LOC5",
             "condition": ""
           },
           {
-            "name": "Sixth Location",
-            "desc": "This is after the fifth location!",
+            "verb": "WEST",
+            "target": "LOC5",
+            "condition": ""
+          },
+          {
             "verb": "EAST",
+            "target": "LOC5",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      
+    "rooms": {
+      "START": {
+        "name": "Location 5",
+        "desc": "This is the third location",
+        "exits": [
+        {
+          "verb": "NORTH",
+          "target": "LOC6",
+          "condition": ""
+        },
+        {
+          "verb": "SOUTH",
+          "target": "LOC6",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "LOC6",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "LOC6",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+    },
+    "rooms": {
+      "START": {
+        "name": "Location 6",
+        "desc": "This is the sixth location",
+        "exits": [
+          {
+            "verb": "NORTH",
             "target": "LOC7",
             "condition": ""
           },
           {
-            "name": "Seventh Location",
-            "desc": "This is after the sixth location!",
-            "verb": "NORTH",
-            "target": "EXITS",
+            "verb": "SOUTH",
+            "target": "LOC7",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LOC7",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LOC7",
             "condition": ""
           }
-           ],
+        ],
         "inventory": []
       },
-      "LOC2": {
-        "name": "Second Location",
-        "desc": "Here is the second location.",
-        "exits": [       
-        ]
-      },
-      "LOC3": {
-        "name": "Third Location",
-        "desc": "Here is the third location but you still don't see your parents",
+    "rooms": {
+      "START": {
+        "name": "Location 7",
+        "desc": "This is the seventh location",
         "exits": [
-        ]
-      },
-      "LOC4": {
-        "name": "Fourth Location",
-        "desc": "Here is the fourth location you still see nothing but darkness",
-        "exits":[
-        ]
-      },
-      "LOC5": {
-        "name": "Fifth Location",
-        "desc": "Here is the fifth location you still see darkness and a dead rat",
-        "exits":[
-        ]
-      },
-      "LOC6": {
-        "name": "Sixth Location",
-        "desc": "Here is the sixth location you start seeing some light",
-        "exits":[
-        ]
-      },
-      "LOC7": {
-        "name": "Seventh Location",
-        "desc": "You have made it out you look around and see that you're in the middle of a crime scene",
+          {
+            "verb": "NORTH",
+            "target": "LOC8",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LOC8",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LOC8",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LOC8",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      }, 
+    "rooms": {
+      "START": {
+        "name": "Location 8",
+        "desc": "This is the third location",
         "exits": [
-        ]
+          {
+            "verb": "NORTH",
+            "target": "LOC9",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LOC9",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LOC9",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LOC9",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      }, 
+    "rooms": {
+      "START": {
+        "name": "Location 9",
+        "desc": "This is the third location",
+        "exits": [
+          {
+            "verb": "NORTH",
+            "target": "LOC10",
+            "condition": ""
+          },
+          {
+            "verb": "SOUTH",
+            "target": "LOC10",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "LOC10",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "LOC10",
+            "condition": ""
+          }
+        ],
+        "inventory": []
       },
+    "rooms": {
+      "START": {
+         "name": "Last Location",
+          "desc": "This is the last location",
+          "exits": [
+            {
+              "verb": "NORTH",
+              "target": "EXIT",
+              "condition": ""
+            },
+            {
+              "verb": "SOUTH",
+              "target": "EXIT",
+              "condition": ""
+            },
+            {
+              "verb": "WEST",
+              "target": "EXIT",
+              "condition": ""
+            },
+            {
+              "verb": "EAST",
+              "target": "EXIT",
+              "condition": ""
+            }
+          ],
+          "inventory": []
+        },
+        "LOC2": {
+          "name": "Location 2",
+          "desc": "You are in the second location in the cave and you see nothing but pitch black.",
+          "exits": [
+        ],
+        "inventory": []
+        },
+        "LOC3": {
+          "name": "Location 3",
+          "desc": "You are in the third location in the cave, but you still don't see your parents.",
+          "exits": [
+        ],
+        "inventory": []
+    },
+    "LOC4": {
+        "name": "Location 4",
+        "desc": "You are in the fourth location in the cave and you see a bunch of skulls and dead rats.",
+        "exits": [
+        ],
+        "inventory": []
+    },
+    "LOC5": {
+        "name": "Location 5",
+        "desc": "You are in the fifth location in the cave and you see even more skulls and dead rats.",
+        "exits": [
+        ],
+        "inventory": []
+    },
+    "LOC6": {
+        "name": "Location 6",
+        "desc": "You are in the sixth location in the cave and there was an exit but it's blocked by rocks.",
+        "exits": [
+        ],
+        "inventory": []
+    },
+    "LOC7": {
+        "name": "Location 7",
+        "desc": "You are in the seventh location in the cave and you notice a picture of you and your parents on the ground.",
+        "exits": [
+        ],
+        "inventory": []
+    },
+    "LOC8": {
+        "name": "Location 8",
+        "desc": "You are in the eighth location in the cave and you notice your father's watch is broken next to a rock.",
+        "exits": [
+        ],
+        "inventory": []
+    },
+    "LOC9": {
+        "name": "Location 9",
+        "desc": "You are in the ninth location in the cave and you see some light.",
+        "exits": [
+        ],
+        "inventory": []
+    },
+    "LOC10": {
+        "name": "Last Location",
+        "desc": "You are in the last location in the cave and you run towards an exit and see your parents dead bodies.",
+        "exits": [
+        ],
         "inventory": []
       }
     }
+  }
+
+
+  
+
+  
+
+    
+
+      
+
+
+
+
   

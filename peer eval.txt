@@ -1,0 +1,41 @@
+Name: Hayden Donnar
+Date: 9/28/2019
+Project: Text Adventure
+Peer's repository: https://github.com/DejaPierce/03-Text-adventure
+
+
+
+What is something you learned by reviewing your peer's project?
+
+ That you able to have multiple games using the same python engine at once.
+ 
+
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+
+The way the locations were classified and then have their descriptions seperate from the user commands. It seems more organized but also a little more effort. 
+
+What suggestions would you have for your peer to improve his/her code?
+
+ I am still struggling to run the game as whenever I type an option of which game I would like to play it just asks me again which game I would like to play. Tried numbers and that crashes it so I'm not sure what I am doing wrong.
+
+I can't figure out what is wrong with the game not starting.
+
+What could have been clearer or better commented?
+
+ What you are supposed to type to select the game.
+
+Was there anything in the code that was confusing to you? If so, what?
+
+ The actual json file for the game seems well written and makes a lot of sense for the layout of the locations.
+
+Does the repository contain an appropriate LICENSE?
+
+ yes
+
+What is something he/she could add to the README.md to make it more descriptive?
+
+ It has a good description of the story of the game but maybe talk more about specific things you did in the code.
+
+Pay a compliment to your peer based on the quality of his/her code.
+
+I like the story a lot its pretty creppy and creative. Also the organization of json file is cool but maybe that's is whats confusing the code? I'm not sure but good job!
